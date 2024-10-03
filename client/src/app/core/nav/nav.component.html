@@ -5,19 +5,11 @@
         </a>
     </div>
     <div class="flex-none">
-        <ul class="menu menu-horizontal px-1 text-base">
-            <li><a>About Me</a></li>
-            <li><a>Skills</a></li>
-            <li>
-                <details>
-                    <summary>Projects</summary>
-                    <ul class="bg-base-200 rounded-t-none p-2">
-                        <li><a>Project 1</a></li>
-                        <li><a>Project 2</a></li>
-                    </ul>
-                </details>
-            </li>
-            <li><a>Contact</a></li>
+        <ul class="menu menu-horizontal items-center px-1 text-base">
+            <li routerLink="Home" fragment="About"><a>About Me</a></li>
+            <li routerLink="Home" fragment="Skills"><a>Skills</a></li>
+            <li routerLink="Home" fragment="Projects"><a>Projects</a></li>
+            <li routerLink="Home" fragment="Contact"><a>Contact</a></li>
             <li>
                 <input type="checkbox" value="lemonade" class="toggle theme-controller" />
             </li>

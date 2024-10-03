@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as profileData from '../../../assets/profile.json';
 
 @Component({
   selector: 'app-contact',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-
+  data: any = profileData;
 }

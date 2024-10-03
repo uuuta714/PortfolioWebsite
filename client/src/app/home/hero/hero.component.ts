@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as profileData from '../../../assets/profile.json';
 
 @Component({
   selector: 'app-hero',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
-
+  data: any = profileData;
 }
