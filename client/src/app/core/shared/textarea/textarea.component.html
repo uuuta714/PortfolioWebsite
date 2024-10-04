@@ -1,0 +1,14 @@
+<div class="mb-4">
+    <label class="font-light">{{label()}}</label>
+    <textarea
+        [formControl]="control"
+        [placeholder]="placeholder()"
+        class="textarea textarea-bordered text-base h-64 w-full mb-4 bg-base-200 focus:outline-primary"
+    ></textarea>
+    @if (control.hasError('required') && control.touched ) {
+        <div role="alert" class="alert alert-warning text-sm py-1 rounded-md">
+            <span class="icon-[bi--exclamation-circle]"></span>
+            <span>Warning: Please enter a {{label().toLowerCase()}}</span>
+        </div>
+    }
+</div>

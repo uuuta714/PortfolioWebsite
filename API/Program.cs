@@ -8,10 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<EmailSettings>(
     builder.Configuration.GetSection("EmailSettings")
 );
-builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IContactService, ContactService>();
 builder.Services.AddControllers();
+builder.Services.AddCors();
 
 var app = builder.Build();
+
+// Configure the HTTP request pipeline (Middleware Pipeline).
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod()
+    .WithOrigins("http://localhost:4200", "https://localhost:4200"));
 
 // Configure the HTTP request pipeline.
 app.MapControllers();
