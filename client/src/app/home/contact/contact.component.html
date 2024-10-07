@@ -28,7 +28,7 @@
                 [placeholder]="'Enter your message'"
                 [formControl]="$any(contactForm.controls['message'])"
             ></app-textarea>
-            <button class="btn btn-primary w-full md:w-auto">SEND</button>
+            <button [disabled]="!contactForm.valid" class="btn btn-primary w-full md:w-auto">SEND</button>
         </form>
     </div>
 </div>

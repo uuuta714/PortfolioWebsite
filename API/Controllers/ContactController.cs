@@ -11,9 +11,10 @@ namespace API.Controllers
         private readonly IContactService _contactService = contactService;
 
         [HttpPost]
-        public IActionResult SendEmail(MessageDto message)
+        public async Task<IActionResult> SendEmailAsync(MessageDto message)
         {
-            _contactService.SendEmail(message);
+            await _contactService.SendEmailAsync(message, Services.EmailType.Notification);
+            await _contactService.SendEmailAsync(message, Services.EmailType.AutoReply);
             return Ok();
         }
     }

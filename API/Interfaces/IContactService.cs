@@ -1,8 +1,9 @@
 using API.DTOs;
+using API.Services;
 
 namespace API.Interfaces;
 
 public interface IContactService
 {
-    void SendEmail(MessageDto message);
+    Task SendEmailAsync(MessageDto message, EmailType type);
 }
