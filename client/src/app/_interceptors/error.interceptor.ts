@@ -1,7 +1,11 @@
 import { HttpInterceptorFn } from '@angular/common/http';
 import { catchError } from 'rxjs';
+import { ToastService } from '../_service/toast.service';
+import { inject } from '@angular/core';
 
 export const errorInterceptor: HttpInterceptorFn = (req, next) => {
+  const toastr = inject(ToastService);
+
   return next(req).pipe(
     catchError(error => {
       if (error) {
@@ -16,17 +20,17 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
               }
               throw modalStateErrors.flat();
             } else {
-              console.log(error.error, error.status)
+              toastr.showErrorToast(error.error, error.status);
             }
             break;
           case 404:
-            console.log('Not Found', error.status);
+            toastr.showErrorToast(error.status, 'Not Found');
             break;
           case 500:
-            console.log('Server Error', error.status);
+            toastr.showErrorToast(error.status, 'Server Error');
             break;
           default:
-            console.log('Something Unexpected');
+            toastr.showErrorToast(error.status, 'Something Unexpected');
             break;
         }
       }

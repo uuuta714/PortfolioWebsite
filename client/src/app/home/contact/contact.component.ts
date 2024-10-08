@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { TextInputComponent } from "../../core/shared/text-input/text-input.component";
 import { TextareaComponent } from '../../core/shared/textarea/textarea.component';
 import { ContactService } from '../../_service/contact.service';
+import { ToastService } from '../../_service/toast.service';
 
 @Component({
   selector: 'app-contact',
@@ -16,10 +17,12 @@ export class ContactComponent implements OnInit{
   data: any = profileData;
   private fb = inject(FormBuilder);
   private contactService = inject(ContactService);
+  private toastr = inject(ToastService);
   contactForm: FormGroup = new FormGroup({});
+  isSending: Boolean = false;
 
   ngOnInit(): void {
-    this.initializeForm()
+    this.initializeForm();
     console.log(this.contactForm.controls);
   }
 
@@ -33,9 +36,15 @@ export class ContactComponent implements OnInit{
   }
 
   sendMessage() {
+    this.isSending = true;
     this.contactService.sendMessage(this.contactForm.value).subscribe({
-      next: _ => console.log(this.contactForm.value),
-      error: error => console.log(error)
+      error: () => {
+        this.isSending = false;
+      },
+      complete: () => {
+        this.isSending = false;
+        this.toastr.showSuccessToast('Success', 'Form submitted!')
+      }
     })
   }
 }

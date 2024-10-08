@@ -1,0 +1,18 @@
+<div class="toast">
+    @for (toast of toasts; track toast.id) {
+        @if (toast.type === 'success') {
+            <div class="alert alert-success">
+                <span class="icon-[bi--check-circle]"></span>
+                <span>{{toast.title}}</span>
+                <span>{{toast.message}}</span>
+            </div>
+        }
+        @if (toast.type === 'error') {
+            <div class="alert alert-error">
+                <span class="icon-[bi--x-circle]"></span>
+                <span>{{toast.title}}</span>
+                <span>{{toast.message}}</span>
+            </div>
+        }
+    }
+</div>
