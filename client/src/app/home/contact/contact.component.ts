@@ -43,7 +43,8 @@ export class ContactComponent implements OnInit{
       },
       complete: () => {
         this.isSending = false;
-        this.toastr.showSuccessToast('Success', 'Form submitted!')
+        this.contactForm.reset();
+        this.toastr.showSuccessToast('Success', 'Form submitted!');
       }
     })
   }

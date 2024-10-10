@@ -1,22 +1,25 @@
-<div class="grid grid-cols-1 gap-4 md:gap-8 py-6 md:px-8 lg:px-16 md:grid-cols-12">
-    <div class="md:col-span-4">
-        <h1 class="text-6xl md:text-8xl font-heading">SKILLS</h1>
+<section id="skills">
+    <div class="grid min-h-[80vh] grid-cols-1 gap-4 md:gap-8 py-6 md:px-8 lg:px-16 md:grid-cols-12">
+        <div class="md:col-span-4">
+            <h1 #skillsTitle class="text-6xl md:text-8xl font-heading">SKILLS</h1>
+        </div>
+        <div class="md:col-span-8">
+            @for (skills of data.skills; track $index) {
+                <div #skillsSubtitle class="flex w-full text-2xl md:text-3xl font-medium">{{skills.category}}</div>
+                <div class="flex gap-2 py-4 flex-wrap">
+                    @for (technology of skills.technologies; track $index) {
+                        <div #skillsItem
+                            class="flex flex-col items-center justify-center min-h-16 py-2 rounded-lg bg-base-200 shadow-xl w-20 md:w-24 lg:w-32 h-16 md:h-20 lg:h-24 gap-1 hover:outline hover:outline-primary hover:outline-1 hover:bg-secondary hover:text-secondary-content">
+                            <span class="{{technology.icon}} text-5xl"></span>
+                            <h3 class="font-light text-xs md:text-sm">{{technology.name}}</h3>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
     </div>
-    <div class="md:col-span-8">
-        @for (skills of data.skills; track $index) {
-            <div class="flex w-full text-2xl md:text-3xl font-medium">{{skills.category}}</div>
-            <div class="flex gap-2 py-4 flex-wrap">
-                @for (technology of skills.technologies; track $index) {
-                    <div
-                        class="flex flex-col items-center justify-center min-h-16 py-2 rounded-lg bg-base-200 shadow-xl w-20 md:w-24 lg:w-32 h-16 md:h-20 lg:h-24 gap-1 hover:outline hover:outline-primary hover:outline-1 hover:bg-secondary hover:text-secondary-content">
-                        <span class="{{technology.icon}} text-5xl"></span>
-                        <h3 class="font-light text-xs md:text-sm">{{technology.name}}</h3>
-                    </div>
-                }
-            </div>
-        }
-    </div>
-</div>
+</section>
+
 
 <!-- Temporary workaround for dynamic update with Tailwind CSS -->
 <!-- List all icons here to be loaded for skills section -->
@@ -28,8 +31,9 @@
     <span class="icon-[devicon--tailwindcss]"></span>
     <span class="icon-[devicon--javascript]"></span>
     <span class="icon-[devicon--typescript]"></span>
-    <span class="icon-[devicon--threejs]"></span>
     <span class="icon-[devicon--angular]"></span>
+    <span class="icon-[devicon--threejs]"></span>
+    <span class="icon-[logos--greensock-icon]"></span>
     <span class="icon-[devicon--csharp]"></span>
     <span class="icon-[devicon--dotnetcore]"></span>
     <span class="icon-[devicon--mysql]"></span>

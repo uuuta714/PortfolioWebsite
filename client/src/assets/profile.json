@@ -40,12 +40,16 @@
                     "icon": "icon-[devicon--typescript]"
                 },
                 {
+                    "name": "Angular",
+                    "icon": "icon-[devicon--angular]"
+                },
+                {
                     "name": "Three.js",
                     "icon": "icon-[devicon--threejs]"
                 },
                 {
-                    "name": "Angular",
-                    "icon": "icon-[devicon--angular]"
+                    "name": "GSAP",
+                    "icon": "icon-[logos--greensock-icon]"
                 }
             ]
         },
