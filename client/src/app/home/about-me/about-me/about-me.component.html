@@ -1,0 +1,14 @@
+<section id="about">
+    <div class="min-h-[80vh] py-8 md:px-8 md:py-16 lg:px-16 lg:py-24">
+        <div class="grid grid-cols-12 gap-4 md:gap-8">
+            <div class="col-span-12 md:col-span-4">
+                <h1 #aboutTitle class="text-6xl md:text-8xl font-heading">ABOUT ME</h1>
+            </div>
+            <div class="col-span-12 md:col-span-8">
+                <p #aboutSubtitle class="text-2xl md:text-3xl font-medium">{{data.aboutMe.title}}</p>
+                <p #aboutParagraph class="py-6 font-light">{{data.aboutMe.subtitle}}</p>
+            </div>
+        </div>
+        <app-timeline [experiences]="data.aboutMe.experiences"></app-timeline>
+    </div>
+</section>

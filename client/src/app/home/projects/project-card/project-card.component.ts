@@ -29,7 +29,7 @@ export class ProjectCardComponent implements AfterViewInit{
           end: 'bottom center',
           scrub: true,
         },
-        x: 300,
+        scale: 0,
         opacity: 0,
         ease: "power2.out",
       });

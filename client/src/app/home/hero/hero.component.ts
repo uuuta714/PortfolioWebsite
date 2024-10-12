@@ -1,7 +1,6 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import * as profileData from '../../../assets/profile.json';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 @Component({
   selector: 'app-hero',
@@ -20,19 +19,15 @@ export class HeroComponent implements AfterViewInit{
   @ViewChild('heroButtons')
   private heroButtons!: ElementRef<HTMLDivElement>;
   @ViewChild('heroAvatar')
-  private heroAvatar!: ElementRef<HTMLImageElement>;
+  private heroAvatar!: ElementRef<HTMLDivElement>;
 
   ngAfterViewInit() {
     this.heroAnimation();
   }
 
   private heroAnimation(): void {
-    gsap.registerPlugin(ScrollTrigger);
 
     gsap.from(this.heroTitle.nativeElement, {
-      scrollTrigger: {
-        trigger: '#hero',
-      },
       y: 200,
       opacity: 0,
       ease: "power2.out",
@@ -40,9 +35,6 @@ export class HeroComponent implements AfterViewInit{
     });
 
     gsap.from(this.heroParagraph.nativeElement, {
-      scrollTrigger: {
-        trigger: '#hero',
-      },
       y: 200,
       opacity: 0,
       ease: "power2.out",
@@ -50,9 +42,6 @@ export class HeroComponent implements AfterViewInit{
     });
 
     gsap.from(this.heroButtons.nativeElement, {
-      scrollTrigger: {
-        trigger: '#hero',
-      },
       y: 200,
       opacity: 0,
       ease: "power2.out",
@@ -60,13 +49,10 @@ export class HeroComponent implements AfterViewInit{
     });
     
     gsap.from(this.heroAvatar.nativeElement, {
-      scrollTrigger: {
-        trigger: '#hero',
-      },
       y: 200,
       opacity: 0,
       ease: "power2.out",
-      duration: 0.75
+      duration: 1.0
     });
   }
 }

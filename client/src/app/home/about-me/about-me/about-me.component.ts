@@ -1,12 +1,13 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import * as profileData from '../../../assets/profile.json';
+import * as profileData from '../../../../assets/profile.json';
+import { TimelineComponent } from "../timeline/timeline.component";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [TimelineComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css'
 })
@@ -19,8 +20,6 @@ export class AboutMeComponent implements AfterViewInit{
   private aboutSubtitle!: ElementRef<HTMLParagraphElement>;
   @ViewChild('aboutParagraph')
   private aboutParagraph!: ElementRef<HTMLParagraphElement>;
-  @ViewChild('aboutLink')
-  private aboutLink!: ElementRef<HTMLDivElement>;
 
   ngAfterViewInit() {
     this.aboutMeAnimation()
@@ -54,17 +53,6 @@ export class AboutMeComponent implements AfterViewInit{
     gsap.from(this.aboutParagraph.nativeElement, {
       scrollTrigger: {
         trigger: this.aboutParagraph.nativeElement,
-        end: 'bottom center',
-        scrub: true,
-      },
-      x: 200,
-      opacity: 0,
-      ease: "power2.out",
-    });
-
-    gsap.from(this.aboutLink.nativeElement, {
-      scrollTrigger: {
-        trigger: this.aboutLink.nativeElement,
         end: 'bottom center',
         scrub: true,
       },

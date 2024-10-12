@@ -9,7 +9,40 @@
     },
     "aboutMe": {
         "title": "I am a full-stack developer based in Sydney. Has a master degree in IT majoring in enterprise applications.",
-        "subtitle": "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi."
+        "subtitle": "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
+        "experiences": [
+            {
+                "title": "Library IT Officer",
+                "company": "University of Technology Sydney (Australia)",
+                "duration": "Aug 2023 - Dec 2023",
+                "descriptions": [
+                    "Emerged as the primary point of contact for IT assistance, resolving customer issues and managing support tickets",
+                    "Managed database to import missing patron data using Postman, overcoming data integration challenges and ensuring uninterrupted access to library resources and account systems",
+                    "Transformed ticket trend analysis process by developing Excel VBA that automated the compilation of statistical reports",
+                    "Strengthened cybersecurity measures by conducting access log analysis to prevent resource misuse"
+                ]
+            },
+            {
+                "title": "Demand Supply Planner",
+                "company": "Sharp Electronics (Vietnam) Company Limited",
+                "duration": "Jul 2017 - Feb 2022",
+                "descriptions": [
+                    "Engineered a material forecasting strategy leveraging Excel VBA, enhancing accuracy in project planning and inventory readiness",
+                    "Enhanced inventory management by analyzing factory data, increasing operational efficiency and reducing overhead",
+                    "Facilitated stakeholder meetings by preparing and distributing agendas and minutes, ensuring project alignment"
+                ]
+            },
+            {
+                "title": "Software Engineer",
+                "company": "Works Applications Co., Ltd. (Japan)",
+                "duration": "Sep 2015",
+                "descriptions": [
+                    "Performed analytical research to identify operational inefficiencies in the manufacturing industry",
+                    "Developed a software prototype with Delphi for inventory management, providing a practical solution to identified operational challenges",
+                    "Honored with the Outstanding Performance Prize for superior problem-solving capabilities among peers"
+                ]
+            }
+        ]
     },
     "skills": [
         {

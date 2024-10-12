@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { HeroComponent } from "./hero/hero.component";
-import { AboutMeComponent } from "./about-me/about-me.component";
+import { AboutMeComponent } from "./about-me/about-me/about-me.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { ProjectsComponent } from "./projects/projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";

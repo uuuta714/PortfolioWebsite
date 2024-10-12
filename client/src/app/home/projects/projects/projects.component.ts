@@ -32,7 +32,7 @@ export class ProjectsComponent implements AfterViewInit{
         end: 'bottom center',
         scrub: true,
       },
-      x: 300,
+      x: 200,
       opacity: 0,
       ease: "power2.out",
     });
@@ -44,7 +44,7 @@ export class ProjectsComponent implements AfterViewInit{
         end: 'bottom center',
         scrub: true,
       },
-      x: 300,
+      x: 200,
       opacity: 0,
       ease: "power2.out",
     });

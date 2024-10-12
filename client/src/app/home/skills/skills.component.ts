@@ -34,10 +34,9 @@ export class SkillsComponent implements AfterViewInit{
         end: 'bottom center',
         scrub: true,
       },
-      y: 200,
+      x: 200,
       opacity: 0,
       ease: "power2.out",
-      delay: 0,
     });
 
     this.skillsSubtitles.forEach((subtitle) => {
@@ -47,7 +46,7 @@ export class SkillsComponent implements AfterViewInit{
           end: 'bottom center',
           scrub: true,
         },
-        x: 300,
+        x: 200,
         opacity: 0,
         ease: "power2.out",
       });
@@ -60,8 +59,7 @@ export class SkillsComponent implements AfterViewInit{
           end: 'bottom center',
           scrub: true,
         },
-        x: 300,
-        rotation: 360,
+        scale: 0,
         opacity: 0,
         ease: "power2.out",
       });
