@@ -9,7 +9,6 @@ module.exports = {
     extend: {
       fontFamily: {
         heading: ["Bebas Neue"],
-
         body: ["Manrope"],
       }
     },

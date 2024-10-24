@@ -1,18 +1,34 @@
 <div class="navbar">
-    <div class="flex-1">
-        <a class="btn btn-ghost text-3xl text-primary">
+    <div class="navbar-start">
+        <a class="btn btn-ghost text-3xl text-primary" routerLink="Home">
             <span class="icon-[bi--code-slash]"></span>
         </a>
     </div>
-    <div class="flex-none">
-        <ul #navMenu class="menu menu-horizontal items-center px-1 text-base">
-            <li routerLink="Home" fragment="About"><a>About Me</a></li>
-            <li routerLink="Home" fragment="Skills"><a>Skills</a></li>
-            <li routerLink="Home" fragment="Projects"><a>Projects</a></li>
-            <li routerLink="Home" fragment="Contact"><a>Contact</a></li>
-            <li>
-                <input type="checkbox" value="lemonade" class="toggle theme-controller" />
-            </li>
-        </ul>
+    <div class="navbar-end">
+        <div class="hidden lg:flex">
+            <ul #navMenu class="menu menu-horizontal items-center px-1 text-base">
+                <li routerLink="Home" fragment="About"><a>About Me</a></li>
+                <li routerLink="Home" fragment="Skills"><a>Skills</a></li>
+                <li routerLink="Home" fragment="Projects"><a>Projects</a></li>
+                <li routerLink="Home" fragment="Contact"><a>Contact</a></li>
+                <div class="flex px-2">
+                    <app-theme-controller [lightTheme]="'lemonade'"></app-theme-controller>
+                </div>
+            </ul>
+        </div>
+        <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost text-3xl lg:hidden">
+                <span class="icon-[bi--list]"></span>
+            </div>
+            <ul tabindex="0" class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li routerLink="Home" fragment="About"><a>About Me</a></li>
+                <li routerLink="Home" fragment="Skills"><a>Skills</a></li>
+                <li routerLink="Home" fragment="Projects"><a>Projects</a></li>
+                <li routerLink="Home" fragment="Contact"><a>Contact</a></li>
+                <div class="px-6 py-3">
+                    <app-theme-controller [lightTheme]="'lemonade'"></app-theme-controller>
+                </div>
+            </ul>
+        </div>
     </div>
 </div>

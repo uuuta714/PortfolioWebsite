@@ -1,5 +1,5 @@
 <section id="contact">
-    <div class="grid min-h-[80vh] grid-cols-1 gap-4 md:gap-8 py-8 md:px-8 md:py-16 lg:px-16 lg:py-24 md:grid-cols-12">
+    <div class="grid min-h-[80vh] grid-cols-1 px-1 py-8 gap-4 md:gap-8 md:px-8 md:py-16 lg:px-16 lg:py-24 md:grid-cols-12">
         <div class="md:col-span-6">
             <h1 #contactTitle class="text-6xl md:text-8xl font-heading">LET'S CONNECT</h1>
             <p #contactSubtitle class="py-6 text-base font-light">
@@ -29,7 +29,7 @@
                     [placeholder]="'Enter your message'"
                     [formControl]="$any(contactForm.controls['message'])"
                 ></app-textarea>
-                <button [disabled]="!contactForm.valid || isSending" class="btn btn-primary w-full md:w-auto">
+                <button [disabled]="!contactForm.valid || isSending" class="btn btn-primary w-full">
                     @if (isSending) {
                         <span class="loading loading-spinner"></span>
                     } @else {

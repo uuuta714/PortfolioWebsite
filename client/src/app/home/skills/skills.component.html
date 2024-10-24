@@ -1,9 +1,9 @@
 <section id="skills">
-    <div class="grid min-h-[80vh] grid-cols-1 gap-4 md:gap-8 py-8 md:px-8 md:py-16 lg:px-16 lg:py-24 md:grid-cols-12">
-        <div class="md:col-span-4">
+    <div class="grid min-h-[80vh] grid-cols-1 gap-4 px-1 py-8 md:gap-8 md:px-8 md:py-16 lg:px-16 lg:py-24 md:grid-cols-12">
+        <div class="col-span-12 lg:col-span-4">
             <h1 #skillsTitle class="text-6xl md:text-8xl font-heading">SKILLS</h1>
         </div>
-        <div class="md:col-span-8">
+        <div class="col-span-12 lg:col-span-8">
             @for (skills of data.skills; track $index) {
                 <div #skillsSubtitle class="flex w-full text-2xl md:text-3xl font-medium">{{skills.category}}</div>
                 <div class="flex gap-2 py-4 flex-wrap">
@@ -34,8 +34,9 @@
     <span class="icon-[devicon--angular]"></span>
     <span class="icon-[devicon--threejs]"></span>
     <span class="icon-[logos--greensock-icon]"></span>
+    <span class="icon-[devicon--rxjs]"></span>
     <span class="icon-[devicon--csharp]"></span>
-    <span class="icon-[devicon--dotnetcore]"></span>
+    <span class="icon-[devicon--dot-net]"></span>
     <span class="icon-[devicon--mysql]"></span>
     <span class="icon-[devicon--microsoftsqlserver]"></span>
     <span class="icon-[devicon--azure]"></span>

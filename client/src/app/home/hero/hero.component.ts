@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import * as profileData from '../../../assets/profile.json';
 import { gsap } from 'gsap';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })

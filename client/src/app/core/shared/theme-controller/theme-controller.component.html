@@ -1,0 +1,13 @@
+<label class="swap swap-rotate">
+    <input type="checkbox" class="theme-controller"
+        [checked]="selectedTheme() === initialTheme"
+        (change)="toggleTheme()" />
+    @if (initialTheme === lightTheme) {
+        <div class="swap-on flex justify-center"><span class="icon-[bi--sun] text-xl place-self-center"></span></div>
+        <div class="swap-off flex justify-center"><span class="icon-[bi--moon] text-xl place-self-center"></span></div>
+    }
+    @if (initialTheme === darkTheme) {
+        <div class="swap-on flex justify-center"><span class="icon-[bi--moon] text-xl place-self-center"></span></div>
+        <div class="swap-off flex justify-center"><span class="icon-[bi--sun] text-xl place-self-center"></span></div>
+    }
+</label>
