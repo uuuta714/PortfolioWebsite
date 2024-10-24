@@ -21,7 +21,12 @@ app.UseMiddleware<ExceptionMiddleware>();
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod()
     .WithOrigins("http://localhost:4200", "https://localhost:4200"));
 
+// Serve angular client project as static files
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 // Configure the HTTP request pipeline.
 app.MapControllers();
+app.MapFallbackToController("Index", "Fallback");
 
 app.Run();

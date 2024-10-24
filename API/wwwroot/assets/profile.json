@@ -1,0 +1,181 @@
+{
+    "hero": {
+        "avatar": "assets/images/avatar.png",
+        "subtitle": "Sydney-based full-stack software engineer passionate about building efficient and scalable applications.",
+        "contactLinks": {
+            "linkedin": "https://www.linkedin.com/in/yuta-horiuchi-dev/",
+            "github": "https://github.com/uuuta714"
+        }
+    },
+    "aboutMe": {
+        "title": "Turning a Passion for Business Optimization into Software Solutions: My Journey into Software Engineering",
+        "subtitle": "My journey started in demand supply planning and inventory control, where I loved finding ways to improve business processes and solve problems. I used Excel VBA to automate tasks, which made me realize the power of technology in making work more efficient. This sparked my interest in software development. I wanted to do more than just use Excel—I wanted to build tools and applications that could make a bigger impact. So, I pursued a Master's degree in Information Technology, focusing on software development. Now, I'm excited to use my skills to create software that helps businesses run more smoothly and effectively.",
+        "experiences": [
+            {
+                "title": "Master of IT (Software Development)",
+                "company": "University of Technology Sydney (Australia)",
+                "duration": "Jul 2022 - Jun 2024",
+                "type": "Education",
+                "descriptions": [
+                    "Built strong software development skills through hands-on projects, covering everything from high-level business strategy and IT alignment to detailed technical implementation. Gained expertise in cloud computing, enterprise systems, databases, and full-stack application development. This holistic approach equips me to deliver scalable, efficient solutions that align with business goals and solve complex technical challenges.",
+                    "GPA: 6.94/7.00 (WAM: 91.44/100.00)",
+                    "2023 & 2024 Dean's List - Faculty of Engineering and Information Technology"
+                ]
+            },
+            {
+                "title": "Library IT Officer",
+                "company": "University of Technology Sydney (Australia)",
+                "duration": "Aug 2023 - Dec 2023",
+                "type": "Casual",
+                "descriptions": [
+                    "Emerged as the primary point of contact for IT assistance, resolving customer issues and managing support tickets",
+                    "Managed patron database using DBeaver and Postman, overcoming data integration challenges and ensuring uninterrupted access to library resources and account systems",
+                    "Transformed ticket trend analysis process by developing Excel VBA scripts that automated the compilation of statistical data",
+                    "Strengthened cybersecurity measures by conducting access log analysis to prevent resource misuse"
+                ]
+            },
+            {
+                "title": "Demand Supply Planner",
+                "company": "Sharp Electronics (Vietnam) Company Limited",
+                "duration": "Jul 2017 - Feb 2022",
+                "type": "Full-time",
+                "descriptions": [
+                    "Engineered a material forecasting system leveraging Excel VBA, improving accuracy and readiness in project planning",
+                    "Enhanced inventory management by analyzing factory data, increasing operational efficiency and reducing overhead",
+                    "Facilitated cross-functional meetings, enhancing collaboration between stakeholders and ensuring project alignment"
+                ]
+            },
+            {
+                "title": "Software Engineer",
+                "company": "Works Applications Co., Ltd. (Japan)",
+                "duration": "Sep 2015",
+                "type": "Internship",
+                "descriptions": [
+                    "Performed analytical research to identify operational inefficiencies in the manufacturing industry",
+                    "Developed a software prototype using Delphi for inventory management, providing a practical solution to identified operational challenges",
+                    "Awarded the Outstanding Performance Prize for superior problem-solving abilities among peers"
+                ]
+            }
+        ]
+    },
+    "skills": [
+        {
+            "category": "Frontend",
+            "technologies": [
+                {
+                    "name": "HTML",
+                    "icon": "icon-[devicon--html5]"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "icon-[devicon--css3]"
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": "icon-[devicon--bootstrap]"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "icon": "icon-[devicon--tailwindcss]"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "icon-[devicon--javascript]"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "icon-[devicon--typescript]"
+                },
+                {
+                    "name": "Angular",
+                    "icon": "icon-[devicon--angular]"
+                },
+                {
+                    "name": "Three.js",
+                    "icon": "icon-[devicon--threejs]"
+                },
+                {
+                    "name": "GSAP",
+                    "icon": "icon-[logos--greensock-icon]"
+                },
+                {
+                    "name": "RxJS",
+                    "icon": "icon-[devicon--rxjs]"
+                }
+            ]
+        },
+        {
+            "category": "Backend",
+            "technologies": [
+                {
+                    "name": "C#",
+                    "icon": "icon-[devicon--csharp]"
+                },
+                {
+                    "name": "ASP.NET Core",
+                    "icon": "icon-[devicon--dot-net]"
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "icon-[devicon--mysql]"
+                },
+                {
+                    "name": "MS SQL",
+                    "icon": "icon-[devicon--microsoftsqlserver]"
+                }
+            ]
+        },
+        {
+            "category": "Cloud & Infra",
+            "technologies": [
+                {
+                    "name": "Azure",
+                    "icon": "icon-[devicon--azure]"
+                },
+                {
+                    "name": "AWS",
+                    "icon": "icon-[devicon--amazonwebservices-wordmark]"
+                },
+                {
+                    "name": "Docker",
+                    "icon": "icon-[devicon--docker]"
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "image": "assets/images/PortfolioWebsite.png",
+            "title": "Portfolio Website",
+            "description": "Dynamic and responsive portfolio website built with Angular, enhanced by Tailwind CSS and Daisy UI for a modern, clean design. Interactive animations are powered by GSAP, creating a visually engaging experience. The backend is built with ASP.NET Web API, handling emails upon contact form submissions.",
+            "year": 2024,
+            "techStack": [
+                "Tailwind CSS",
+                "TypeScript",
+                "Angular",
+                "GSAP",
+                "C#",
+                "ASP.NET Web API"
+            ],
+            "liveDemo": "",
+            "github": "https://github.com/uuuta714/PortfolioWebsite/"
+        },
+        {
+            "image": "assets/images/VirtualCarStudio.png",
+            "title": "Virtual Car Studio",
+            "description": "Virtual Car Studio allows user to manipulate lighting set-up and camera movement to create sequences of videoes of 3D car model. It similuates the real-life effect of lightings and camera movement for prompt creation of mockup or storyboard in car commercial.",
+            "year": 2024,
+            "techStack": [
+                "Bootstrap",
+                "JavaScript",
+                "Three.js",
+                "GSAP"
+            ],
+            "liveDemo": "https://uuuta714.github.io/Virtual-Car-Studio/",
+            "github": "https://github.com/uuuta714/Virtual-Car-Studio/"
+        }
+    ],
+    "contact": {
+        "email": "yuta.h714@gmail.com"
+    }
+}
