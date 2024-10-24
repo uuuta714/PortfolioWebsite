@@ -147,7 +147,7 @@
         {
             "image": "assets/images/PortfolioWebsite.png",
             "title": "Portfolio Website",
-            "description": "Dynamic and responsive portfolio website built with Angular, enhanced by Tailwind CSS and Daisy UI for a modern, clean design. Interactive animations are powered by GSAP, creating a visually engaging experience. The backend is built with ASP.NET Web API, handling emails upon contact form submissions.",
+            "description": "Dynamic and responsive portfolio website built with Angular, enhanced by Tailwind CSS and Daisy UI for a modern, clean design. Interactive animations are powered by GSAP, creating a visually engaging experience. The backend, built with ASP.NET Web API, handles emails upon contact form submissions. The website is deployed on Azure and accommodates CI/CD from GitHub for seamless updates and deployment.",
             "year": 2024,
             "techStack": [
                 "Tailwind CSS",
@@ -155,7 +155,8 @@
                 "Angular",
                 "GSAP",
                 "C#",
-                "ASP.NET Web API"
+                "ASP.NET Web API",
+                "Azure"
             ],
             "liveDemo": "",
             "github": "https://github.com/uuuta714/PortfolioWebsite/"
@@ -163,7 +164,7 @@
         {
             "image": "assets/images/VirtualCarStudio.png",
             "title": "Virtual Car Studio",
-            "description": "Virtual Car Studio allows user to manipulate lighting set-up and camera movement to create sequences of videoes of 3D car model. It similuates the real-life effect of lightings and camera movement for prompt creation of mockup or storyboard in car commercial.",
+            "description": "Virtual Car Studio allows users to manipulate lighting setups and camera movements to create video sequences of a 3D car model. It simulates the real-life effects of lighting and camera movements, enabling the prompt creation of mockups or storyboards for car commercials. This project was developed in collaboration with Stanley Lam and was shortlisted for UTS Tech Fest in the Computer Graphics category.",
             "year": 2024,
             "techStack": [
                 "Bootstrap",
